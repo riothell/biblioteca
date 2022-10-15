@@ -2,6 +2,10 @@ import { StyleSheet, Text, TextInput, View, Image, TouchableOpacity } from 'reac
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import camera from '../assets/AddCamera.png'
+import mail from '../assets/RegisterScreen/mail.png'
+import phone from '../assets/RegisterScreen/phone.png'
+import Shape from '../assets/RegisterScreen/Shape.png'
+import User from '../assets/RegisterScreen/User.png'
 const RegisterScreen = () => {
   return (
     <SafeAreaView style = {styles.SafeArea}>
@@ -16,17 +20,37 @@ const RegisterScreen = () => {
         </TouchableOpacity>
 
         <View style = {styles.Inputs}>
+            <View style = {{ flexDirection: "row", flexWrap: "wrap",}}>
+                <Image source = {User} style = {styles.ImgInputs}></Image>
+                <TextInput style = {styles.Label}
+                placeholder="Ingresa tú Nombre"></TextInput>
+            </View>
 
-            <TextInput style = {styles.Label}
-            placeholder="Ingresa tú Nombre"></TextInput>
-            <TextInput style = {styles.Label}
-            placeholder="Ingresa tú Correo Electrónico"></TextInput>
-            <TextInput style = {styles.Label}
-            placeholder="Ingresa tú Número de Teléfono"></TextInput>
-            <TextInput style = {styles.Label}
-            placeholder="Ingresa tú Contraseña"></TextInput>
-            <TextInput style = {styles.Label}
-            placeholder="Ingresa Nuevamente tú Contraseña"></TextInput>
+            <View style = {{ flexDirection: "row", flexWrap: "wrap",}}>
+                <Image source = {mail} style = {styles.ImgInputs}></Image>
+                <TextInput style = {styles.Label}
+                placeholder="Ingresa tú Correo Electrónico"></TextInput>
+            </View>
+
+            <View style = {{ flexDirection: "row", flexWrap: "wrap",}}>
+                <Image source = {phone} style = {styles.ImgInputs}></Image>
+                <TextInput style = {styles.Label}
+                placeholder="Ingresa tú Número de Teléfono"></TextInput>
+            
+         
+            </View>
+            <View style = {{ flexDirection: "row", flexWrap: "wrap",}}>
+                <Image source = {Shape} style = {styles.ImgInputs}></Image>
+                <TextInput style = {styles.Label}
+                placeholder="Ingresa tú Contraseña"></TextInput>
+   
+ 
+            </View>
+            <View style = {{ flexDirection: "row", flexWrap: "wrap",}}>
+                <Image source = {Shape} style = {styles.ImgInputs}></Image>
+                <TextInput style = {styles.Label}
+                placeholder="Ingresa Nuevamente tú Contraseña"></TextInput>
+            </View>
 
         </View>
         <TouchableOpacity
@@ -49,9 +73,10 @@ export default RegisterScreen
 const styles = StyleSheet.create({
     SafeArea:{
         alignItems: 'center',
+        margin: 20,
     },
     Titulo: {
-        marginTop: 100,
+        marginTop: 70,
         fontSize: 36,
         fontWeight: 'bold',
     },
@@ -70,15 +95,21 @@ const styles = StyleSheet.create({
     Inputs: {
         alignItems: "baseline",
     },
+    ImgInputs: {
+        marginTop: 12,
+    },
     Label: {
         Color: '#817C7C',
-        marginVertical: 5,
+        marginVertical: 10,
+        borderBottomWidth: 1,
+        marginLeft: 20,
+        width: "80%",
     },
     BotonCrear: {
         backgroundColor: "#169D83",
         padding: 7,
-        marginVertical: 10,
-        width: "80%",
+        marginTop: 30,
+        width: "90%",
         height: 49,
     },
     TextBoton: {
@@ -88,6 +119,7 @@ const styles = StyleSheet.create({
         color: '#FCFBF2',
     },
     BotonIngreso: {
+        marginTop: 10,
         textAlign: 'center',
         fontSize: 12,
         fontWeight: 'bold',
