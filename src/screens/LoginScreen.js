@@ -35,8 +35,8 @@ export default function App() {
           <TouchableOpacity
             onPress={() => alert('Hello, world!')}>
               <View style = {styles.BotonCrear}>
-                <Text style = {{}}>No tienes una cuenta?</Text>
-                <Text style = {{fontWeight:"bold",}}> Crea una Cuenta</Text>
+                <Text style = {{color: "#FFFFFF",}}>No tienes una cuenta?</Text>
+                <Text style = {{color: "#FFFFFF", fontWeight:"bold",}}> Crea una Cuenta</Text>
               </View>
           </TouchableOpacity>
 
@@ -86,6 +86,7 @@ const styles = StyleSheet.create({
     paddingTop: 7,
   },
   TextoBoton: {
+    color: "#FFFFFF",
     textAlign: "center",
     fontWeight: "bold",
     fontSize: 20,
