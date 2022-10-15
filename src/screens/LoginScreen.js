@@ -1,6 +1,7 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, TextInput, Button, TouchableOpacity} from 'react-native';
+import { StyleSheet, Text, View, TextInput, Image, TouchableOpacity, SafeAreaView, ScrollView} from 'react-native';
 import * as SplashScreen from 'expo-splash-screen';
+import bordelogo from "../assets/bordelogo.png"
+import Logo from "../assets/Logo.png"
 /*
 import COLORPRIMARIO from '../utils/paleta'
 import COLORPRIMARIO from '../utils/paleta'
@@ -11,52 +12,67 @@ setTimeout(SplashScreen.hideAsync, 1000);
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text style = {styles.Titulo}>Inicia Sesión</Text>
-      <Text>Sign your Account</Text>
-      <View style={styles.Labels}>
-        <TextInput style = {styles.Label} 
-          placeholder="Ingresa tu correo electrónico"></TextInput>
-        <TextInput style = {styles.Label}
-          placeholder="Ingresa tu Contraseña"></TextInput>
-        <StatusBar style="auto" />
-      </View>
-      <TouchableOpacity
-      onPress={() => alert('Hello, world!')}
-      style={styles.Buton}>
-        <Text>Iniciar Sesión</Text>
-      </TouchableOpacity>
-      <TouchableOpacity
-      onPress={() => alert('Hello, world!')}>
-        <Text>No tienes una cuenta? Crea una Cuenta</Text>
-      </TouchableOpacity>
-    </View>
+      <SafeAreaView style={styles.container}>
+        <ScrollView>
+        <Image source={bordelogo} style = {{marginTop : 145, height:65, width: "100%", }}></Image>
+
+          <View style = {styles.Header}>
+            <Text style = {styles.Titulo}>Inicia Sesión</Text>
+          </View>
+
+          <View style={styles.Inputs}>
+            <TextInput style = {styles.Label} 
+              placeholder="Ingresa tu correo electrónico"></TextInput>
+            <TextInput secureTextEntry = {true} style = {styles.Label}
+              placeholder="Ingresa tu Contraseña"></TextInput>
+          </View>
+
+          <TouchableOpacity
+            onPress={() => alert('Hello, world!')}
+            style={styles.Buton}>
+            <Text style = {styles.TextoBoton}>Iniciar Sesión</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => alert('Hello, world!')}>
+              <View style = {styles.BotonCrear}>
+                <Text style = {{}}>No tienes una cuenta?</Text>
+                <Text style = {{fontWeight:"bold",}}> Crea una Cuenta</Text>
+              </View>
+          </TouchableOpacity>
+
+          <Image source={Logo} style={styles.ImagenLogo}></Image>
+        </ScrollView>
+      </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: '#1A419A',
-    alignItems: 'center',
-    justifyContent: 'center',
+  },
+  Header: {
+    marginTop: 70,
+    alignItems: "center",
   },
   Titulo: {
     fontSize: 36,
     fontWeight: 'bold',
+    color: "#FFFFFF",
   },
   Label: {
-    height: 40,
-    borderColor: '#FCFBF2',
-    borderWidth: 1,
+    color: "#FFFFFF",
+    justifyContent: "flex-start",
     marginVertical: 5,
-    textAlign: 'center',
-    borderRadius: 4,
-    padding: 10,
+    height: 50,
+    borderColor: '#FFFFFF',
+    borderWidth: 1,
+    borderRadius: 7,
+    paddingLeft: 10,
   },
-  Labels: {
+  Inputs: {
     alignSelf: 'center',
-    width: '90%',
+    width: '85%',
+    marginTop: 30,
   },
   Buton: {
     height: 50,
@@ -65,7 +81,14 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     backgroundColor: '#169D83',
     borderRadius: 5,
+    alignSelf:"center",
     marginTop: 35,
+    paddingTop: 7,
+  },
+  TextoBoton: {
+    textAlign: "center",
+    fontWeight: "bold",
+    fontSize: 20,
   },
   SubTitulo: {
     fontSize: 22,
@@ -73,5 +96,13 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     padding: 5,
     color: '#FCFBF2',
+  },
+  BotonCrear: {
+    marginTop: 20,
+    flexDirection: "row",
+    alignSelf:"center",
+  },
+  ImagenLogo: {
+    marginVertical: 15,
   },
 });
