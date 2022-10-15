@@ -23,24 +23,16 @@ const Categoría = () => {
           <TouchableOpacity
           onPress={() => alert("Hello!!")}
           style = {styles.BotonImagen}>
-
-            <View style = {styles.Viewboton}>
               <Image source = {Drama} style ={styles.Imagen}></Image>
               <Text style = {styles.TextoBotones}>Drama</Text>
-            </View>
-
           </TouchableOpacity>
 
 
           <TouchableOpacity
           onPress={() => alert("Hello!!")}
           style = {styles.BotonImagen}>
-
-            <View style = {styles.Viewboton}>
               <Image source = {Ficcion} style ={styles.Imagen}></Image>
               <Text style = {styles.TextoBotones}>Ficción</Text>
-            </View>
-
           </TouchableOpacity>
 
         </View>
@@ -50,24 +42,16 @@ const Categoría = () => {
           <TouchableOpacity
           onPress={() => alert("Hello!!")}
           style = {styles.BotonImagen}>
-
-            <View style = {styles.Viewboton}>
               <Image source = {Educacion} style ={styles.Imagen}></Image>
               <Text style = {styles.TextoBotones}>Educación</Text>
-            </View>
-
           </TouchableOpacity>
 
 
           <TouchableOpacity
           onPress={() => alert("Hello!!")}
           style = {styles.BotonImagen}>
-
-            <View style = {styles.Viewboton}>
               <Image source = {Poesia} style ={styles.Imagen}></Image>
               <Text style = {styles.TextoBotones}>Poesía</Text>
-            </View>
-
           </TouchableOpacity>
 
         </View>
@@ -77,24 +61,16 @@ const Categoría = () => {
           <TouchableOpacity
           onPress={() => alert("Hello!!")}
           style = {styles.BotonImagen}>
-
-            <View style = {styles.Viewboton}>
               <Image source = {Terror} style ={styles.Imagen}></Image>
               <Text style = {styles.TextoBotones}>Terror</Text>
-            </View>
-
           </TouchableOpacity>
 
 
           <TouchableOpacity
           onPress={() => alert("Hello!!")}
           style = {styles.BotonImagen}>
-
-            <View style = {styles.Viewboton}>
               <Image source = {Comedia} style ={styles.Imagen}></Image>
               <Text style = {styles.TextoBotones}>Comedia</Text>
-            </View>
-
           </TouchableOpacity>
 
         </View>
@@ -104,24 +80,16 @@ const Categoría = () => {
           <TouchableOpacity
           onPress={() => alert("Hello!!")}
           style = {styles.BotonImagen}>
-
-            <View style = {styles.Viewboton}>
               <Image source = {Aventura} style ={styles.Imagen}></Image>
               <Text style = {styles.TextoBotones}>Aventura</Text>
-            </View>
-
           </TouchableOpacity>
 
 
           <TouchableOpacity
           onPress={() => alert("Hello!!")}
           style = {styles.BotonImagen}>
-
-            <View style = {styles.Viewboton}>
               <Image source = {Infantil} style ={styles.Imagen}></Image>
               <Text style = {styles.TextoBotones}>Infantil</Text>
-            </View>
-
           </TouchableOpacity>
 
         </View>
@@ -162,14 +130,13 @@ const styles = StyleSheet.create({
     borderRadius: 33,
     flex: 1,
     marginHorizontal:10,
+    paddingTop: 15,
   },
   TextoBotones: {
     color: "#FFFFFF",
     fontWeight: 'bold',
   },
-  Viewboton: {
-    marginTop: 20,
-  },
+
   Imagen: {
     alignSelf: "center",
   },
