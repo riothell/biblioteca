@@ -10,7 +10,7 @@ import libro5 from '../assets/Libros/Libro5.png'
 import libro6 from '../assets/Libros/Libro6.png'
 import ajustes from '../assets/ajustes.png'
 
-const HistorialFavoritos = () => {
+const HistorialFavoritos = ({navigation}) => {
   return (
     <SafeAreaView style = {styles.main}>
         <ScrollView>
@@ -71,32 +71,32 @@ const HistorialFavoritos = () => {
 
                 <View style = {styles.Libros}>
                 <TouchableOpacity 
-                    onPress={() => alert("Hello!!")}
+                    onPress={() => navigation.push('Libro')}
                     style = {styles.BotonLibros}>
                     <Image source = {libro1} style ={styles.ImgAlquilar}></Image>
                 </TouchableOpacity>
                 <TouchableOpacity 
-                    onPress={() => alert("Hello!!")}
+                    onPress={() => navigation.push('Libro')}
                     style = {styles.BotonLibros}>
                     <Image source = {libro2} style ={styles.ImgAlquilar}></Image>
                 </TouchableOpacity>
                 <TouchableOpacity 
-                    onPress={() => alert("Hello!!")}
+                    onPress={() => navigation.push('Libro')}
                     style = {styles.BotonLibros}>
                     <Image source = {libro3} style ={styles.ImgAlquilar}></Image>
                 </TouchableOpacity>
                 <TouchableOpacity 
-                    onPress={() => alert("Hello!!")}
+                    onPress={() => navigation.push('Libro')}
                     style = {styles.BotonLibros}>
                     <Image source = {libro4} style ={styles.ImgAlquilar}></Image>
                 </TouchableOpacity>
                 <TouchableOpacity 
-                    onPress={() => alert("Hello!!")}
+                    onPress={() => navigation.push('Libro')}
                     style = {styles.BotonLibros}>
                     <Image source = {libro5} style ={styles.ImgAlquilar}></Image>
                 </TouchableOpacity>
                 <TouchableOpacity 
-                    onPress={() => alert("Hello!!")}
+                    onPress={() => navigation.push('Libro')}
                     style = {styles.BotonLibros}>
                     <Image source = {libro6} style ={styles.ImgAlquilar}></Image>
                 </TouchableOpacity>
