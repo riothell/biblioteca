@@ -13,7 +13,7 @@ import libro6 from '../assets/Libros/Libro6.png'
 import Trofeo from '../assets/Trofeo.png'
 import Bag from '../assets/bagMoney.png'
 
-const Libro = () => {
+const Libro = ({navigation}) => {
   return (
     <SafeAreaView>
         <ScrollView>
@@ -128,7 +128,7 @@ const Libro = () => {
                     </TouchableOpacity>
 
                     <TouchableOpacity
-                    onPress={() => alert("Hello!!")}
+                    onPress={() => navigation.push('SeleccionScreen')}
                     style = {[styles.BotonEjemplar, {flexDirection: "row"}]}>
                         <View>
                             <Text style = {[styles.TextoBotonEjemplar, {marginLeft: 10,}]}>Selecciona</Text>
