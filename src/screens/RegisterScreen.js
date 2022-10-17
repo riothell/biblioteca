@@ -6,7 +6,7 @@ import mail from '../assets/RegisterScreen/mail.png'
 import phone from '../assets/RegisterScreen/phone.png'
 import Shape from '../assets/RegisterScreen/Shape.png'
 import User from '../assets/RegisterScreen/User.png'
-const RegisterScreen = () => {
+const RegisterScreen = ({navigation}) => {
   return (
     <SafeAreaView style = {styles.SafeArea}>
         <Text style ={styles.Titulo}>Registrate!</Text>
@@ -54,13 +54,13 @@ const RegisterScreen = () => {
 
         </View>
         <TouchableOpacity
-        onPress={() => alert("Hello!!")}
+        onPress={() => navigation.navigate("TabNav")}
         style ={styles.BotonCrear}>
             <Text style ={styles.TextBoton}>Crear Cuenta</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
-        onPress={() => alert("Hello!!")}>
+        onPress={() => navigation.goBack()}>
             <Text style ={styles.BotonIngreso}>Ya tienes una cuenta? Iniciar Sesión</Text>
         </TouchableOpacity>
 

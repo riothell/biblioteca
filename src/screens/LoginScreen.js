@@ -10,7 +10,7 @@ SplashScreen.preventAutoHideAsync();
 setTimeout(SplashScreen.hideAsync, 1000);
 
 
-export default function App() {
+export default function App({navigation}) {
   return (
       <SafeAreaView style={styles.container}>
         <ScrollView>
@@ -28,12 +28,12 @@ export default function App() {
           </View>
 
           <TouchableOpacity
-            onPress={() => alert('Hello, world!')}
+            onPress={() => navigation.navigate("TabNav")}
             style={styles.Buton}>
             <Text style = {styles.TextoBoton}>Iniciar Sesión</Text>
           </TouchableOpacity>
           <TouchableOpacity
-            onPress={() => alert('Hello, world!')}>
+            onPress={() => navigation.navigate("RegisterScreen")}>
               <View style = {styles.BotonCrear}>
                 <Text style = {{color: "#FFFFFF",}}>No tienes una cuenta?</Text>
                 <Text style = {{color: "#FFFFFF", fontWeight:"bold",}}> Crea una Cuenta</Text>
