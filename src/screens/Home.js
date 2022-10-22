@@ -15,7 +15,7 @@ const Home = ({navigation}) => {
             <View style = {styles.Header}>
                 <View style = {{flex:1,}}>
                     <TouchableOpacity 
-                        onPress={() => alert("Hello!!")}
+                        onPress={() => alert("Perfil del Usuario")}
                         style = {styles.BotonImagen}>
                         <Image source = {camera} style ={styles.Imagen}></Image>
                     </TouchableOpacity>
@@ -24,19 +24,19 @@ const Home = ({navigation}) => {
                     <Text style = {styles.SubTitulo}>Hola Hombre Araña!</Text>
                     <View style = {styles.DatosUsuario}>
                         <TouchableOpacity 
-                            onPress={() => alert("Hello!!")}
+                            onPress={() => alert("Datos del Usuario")}
                             style = {styles.BotonDatosUsuario}>
                             <Text style = {styles.TextoUsuario}>02</Text>
                             <Text style = {styles.TextoUsuario}>Leyendo</Text>
                         </TouchableOpacity>
                         <TouchableOpacity 
-                            onPress={() => alert("Hello!!")}
+                            onPress={() => alert("Datos del Usuario")}
                             style = {[styles.BotonDatosUsuario, {borderLeftWidth: 2, borderRightWidth: 2,}]}>
                             <Text style = {styles.TextoUsuario}>30</Text>
                             <Text style = {styles.TextoUsuario}>Favoritos</Text>
                         </TouchableOpacity>
                         <TouchableOpacity 
-                            onPress={() => alert("Hello!!")}
+                            onPress={() => alert("Datos del Usuario")}
                             style = {styles.BotonDatosUsuario}>
                             <Text style = {styles.TextoUsuario}>60</Text>
                             <Text style = {styles.TextoUsuario}>Historial</Text>

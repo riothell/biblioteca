@@ -21,7 +21,7 @@ const Categoría = () => {
         <View style = {styles.columnas}>
 
           <TouchableOpacity
-          onPress={() => alert("Se Debe dirigir a una sección segun su busqueda")}
+          onPress={() => alert("Se Debe dirigir a una sección según su busqueda")}
           style = {styles.BotonImagen}>
               <Image source = {Drama} style ={styles.Imagen}></Image>
               <Text style = {styles.TextoBotones}>Drama</Text>
@@ -29,7 +29,7 @@ const Categoría = () => {
 
 
           <TouchableOpacity
-          onPress={() => alert("Se Debe dirigir a una sección segun su busqueda")}
+          onPress={() => alert("Se Debe dirigir a una sección según su busqueda")}
           style = {styles.BotonImagen}>
               <Image source = {Ficcion} style ={styles.Imagen}></Image>
               <Text style = {styles.TextoBotones}>Ficción</Text>
@@ -40,7 +40,7 @@ const Categoría = () => {
         <View style = {styles.columnas}>
 
           <TouchableOpacity
-          onPress={() => alert("Se Debe dirigir a una sección segun su busqueda")}
+          onPress={() => alert("Se Debe dirigir a una sección según su busqueda")}
           style = {styles.BotonImagen}>
               <Image source = {Educacion} style ={styles.Imagen}></Image>
               <Text style = {styles.TextoBotones}>Educación</Text>
@@ -48,7 +48,7 @@ const Categoría = () => {
 
 
           <TouchableOpacity
-          onPress={() => alert("Se Debe dirigir a una sección segun su busqueda")}
+          onPress={() => alert("Se Debe dirigir a una sección según su busqueda")}
           style = {styles.BotonImagen}>
               <Image source = {Poesia} style ={styles.Imagen}></Image>
               <Text style = {styles.TextoBotones}>Poesía</Text>
@@ -59,7 +59,7 @@ const Categoría = () => {
         <View style = {styles.columnas}>
 
           <TouchableOpacity
-          onPress={() => alert("Se Debe dirigir a una sección segun su busqueda")}
+          onPress={() => alert("Se Debe dirigir a una sección según su busqueda")}
           style = {styles.BotonImagen}>
               <Image source = {Terror} style ={styles.Imagen}></Image>
               <Text style = {styles.TextoBotones}>Terror</Text>
@@ -67,7 +67,7 @@ const Categoría = () => {
 
 
           <TouchableOpacity
-          onPress={() => alert("Se Debe dirigir a una sección segun su busqueda")}
+          onPress={() => alert("Se Debe dirigir a una sección según su busqueda")}
           style = {styles.BotonImagen}>
               <Image source = {Comedia} style ={styles.Imagen}></Image>
               <Text style = {styles.TextoBotones}>Comedia</Text>
@@ -78,7 +78,7 @@ const Categoría = () => {
         <View style = {styles.columnas}>
 
           <TouchableOpacity
-          onPress={() => alert("Se Debe dirigir a una sección segun su busqueda")}
+          onPress={() => alert("Se Debe dirigir a una sección según su busqueda")}
           style = {styles.BotonImagen}>
               <Image source = {Aventura} style ={styles.Imagen}></Image>
               <Text style = {styles.TextoBotones}>Aventura</Text>
@@ -86,7 +86,7 @@ const Categoría = () => {
 
 
           <TouchableOpacity
-          onPress={() => alert("Se Debe dirigir a una sección segun su busqueda")}
+          onPress={() => alert("Se Debe dirigir a una sección según su busqueda")}
           style = {styles.BotonImagen}>
               <Image source = {Infantil} style ={styles.Imagen}></Image>
               <Text style = {styles.TextoBotones}>Infantil</Text>

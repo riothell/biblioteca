@@ -25,7 +25,7 @@ const Libro = ({navigation}) => {
             <View style = {styles.BotonesNavegacion}>
 
                 <TouchableOpacity
-                    onPress={() => alert("Hello!!")}
+                    onPress={() => alert("Flechas para Navegación")}
                     style = {styles.Flechas}>
                     <Image source = {FlechaIzq} style ={styles.ImagenFlechas}></Image>
                 </TouchableOpacity>
@@ -33,7 +33,7 @@ const Libro = ({navigation}) => {
                 <Image source = {libro4} style ={styles.Imagen}></Image>
 
                 <TouchableOpacity
-                    onPress={() => alert("Hello!!")}
+                    onPress={() => alert("Flechas para Navegación")}
                     style = {styles.Flechas}>
                     <Image source = {FlechaDer} style ={styles.ImagenFlechas}></Image>
                 </TouchableOpacity>
@@ -86,32 +86,32 @@ const Libro = ({navigation}) => {
 
                 <View style = {styles.InfoGeneros}>
                     <TouchableOpacity
-                    onPress={() => alert("Hello!!")}
+                    onPress={() => alert("Géneros del libro que pueden llevar a una busqueda como categoría")}
                     style = {styles.Generos}>
                         <Text style = {styles.TextoGeneros}>Acción</Text>
                     </TouchableOpacity>
 
                     <TouchableOpacity
-                    onPress={() => alert("Hello!!")}
+                    onPress={() => alert("Géneros del libro que pueden llevar a una busqueda como categoría")}
                     style = {styles.Generos}>
                         <Text style = {styles.TextoGeneros}>Terror</Text>
                     </TouchableOpacity>
 
                     <TouchableOpacity
-                    onPress={() => alert("Hello!!")}
+                    onPress={() => alert("Géneros del libro que pueden llevar a una busqueda como categoría")}
                     style = {styles.Generos}>
                         <Text style = {styles.TextoGeneros}>Suspenso</Text>
                     </TouchableOpacity>
 
                     <TouchableOpacity
-                    onPress={() => alert("Hello!!")}
+                    onPress={() => alert("Géneros del libro que pueden llevar a una busqueda como categoría")}
                     style = {styles.Generos}>
                         <Text style = {styles.TextoGeneros}>Aventura</Text>
                     </TouchableOpacity>
                 </View>
 
                 <TouchableOpacity
-                onPress={() => alert("Hello!!")}
+                onPress={() => alert("Géneros del libro que pueden llevar a una busqueda como categoría")}
                 style = {styles.BotonRankingGenero}>
                     <Image source = {Trofeo} style ={styles.ImgRankingGenero}></Image>
                     <Text style = {styles.SpecsRakingGenero}>#10</Text>
@@ -121,7 +121,7 @@ const Libro = ({navigation}) => {
 
                 <View style = {styles.SeccionSeleccionLibro}>
                     <TouchableOpacity
-                    onPress={() => alert("Hello!!")}
+                    onPress={() => alert("Indica la disponibilidad del libro")}
                     style = {[styles.BotonEjemplar, {flexDirection: "column"}]}>
                         <Text style = {[styles.TextoBotonEjemplar, {marginLeft: 10,}]}>Disponible</Text>
                         <Text style = {[styles.TextoBotonEjemplar, {marginLeft: 10,}]}>6</Text>
@@ -139,7 +139,7 @@ const Libro = ({navigation}) => {
                 </View>
 
                 <TouchableOpacity
-                onPress={() => alert("Hello!!")}
+                onPress={() => alert("Alquilar ejemplar")}
                 style = {styles.BotonAlquilar}>
                     <Image source = {Bag} style ={styles.ImgAlquilar}></Image>
                     <Text style = {styles.TextoBotonAlquilar}>Alquilar</Text>
