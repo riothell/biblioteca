@@ -6,9 +6,17 @@ import Logo from "../assets/Logo.png"
 import COLORPRIMARIO from '../utils/paleta'
 import COLORPRIMARIO from '../utils/paleta'
 */
+
+
 SplashScreen.preventAutoHideAsync();
 setTimeout(SplashScreen.hideAsync, 1000);
 
+{/*
+firebase.auth().onAuthStateChanged(user => {
+  console.log(user);
+  user ? console.log("Si") : console.log("No")
+}); 
+*/}
 
 export default function App({navigation}) {
   return (
